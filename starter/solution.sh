@@ -1,13 +1,18 @@
 #!/bin/bash
 
-# Copy a single file
+# Required files and directories create செய்ய
+touch file1.txt file2.txt
+mkdir -p /home/user/documents
+mkdir -p directory
+
+# 1. Copy a single file
 cp file1.txt file2.txt
 
-# Copy a file to a different directory
+# 2. Copy a file to a different directory
 cp file1.txt /home/user/documents/
 
-# Copy multiple files to a directory
+# 3. Copy multiple files to a directory
 cp file1.txt file2.txt /home/user/documents/
 
-# Copy a directory recursively
+# 4. Copy a directory recursively
 cp -r directory /home/user/documents/
